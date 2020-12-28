@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block tittle %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="img/avatar.jpg" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Alexander Cedeño</h2>   
+        <p>Nacido en Portoviejo, 1997</p>        
+        <p>estudiante de Ingeniería en Sistemas de información</p>
+        <p>jugador semiprofesional de League of Legends</p>        
+      </div>
+    </div>  
+  </div>
+{% endblock %}
